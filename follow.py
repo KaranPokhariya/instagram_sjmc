@@ -41,9 +41,9 @@ password = WebDriverWait(driver, 10).until(
 
 #enter username and password
 username.clear()
-username.send_keys("sjmc_confessionss")
+username.send_keys("sjmc_confessions")
 password.clear()
-password.send_keys("Banga123@4")
+password.send_keys("Banga123@")
 
 #target the login button and click it
 button = WebDriverWait(driver, 2).until(EC.element_to_be_clickable(
@@ -86,7 +86,7 @@ for user in to_follow:
     print(user)
     driver.get('https://www.instagram.com/'+ user)
 
-    time.sleep(random.uniform(60,65))
+    time.sleep(random.uniform(60,90))
 
     # searchbox = WebDriverWait(driver, 10).until(
     #     EC.element_to_be_clickable((By.XPATH, "//input[@placeholder='Search']")))
