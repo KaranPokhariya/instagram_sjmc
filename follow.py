@@ -41,9 +41,9 @@ password = WebDriverWait(driver, 10).until(
 
 #enter username and password
 username.clear()
-username.send_keys("sjmc_confessions")
+username.send_keys("sjmc_confessions_")
 password.clear()
-password.send_keys("Banga123@")
+password.send_keys("Oneforall@1")
 
 #target the login button and click it
 button = WebDriverWait(driver, 2).until(EC.element_to_be_clickable(
